@@ -1,3 +1,18 @@
 .header {
-    font-size: 18px;
+    margin-top: 20px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__burger-menu {
+        display: inline-flex;
+    }
 }

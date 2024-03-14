@@ -1,0 +1,130 @@
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 36px;
+
+    &__item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px;
+        background-color: $dark-blue;
+        min-height: 580px;
+        padding: 32px 28px;
+        transition: all .3s;
+        overflow: hidden;
+
+        &:hover {
+            background-color: #5481F3;
+
+            & .services__description {
+                transform: scale(1.05);
+            }
+        }
+
+        &:hover::after {
+            top: 26px;
+            right: 22px;
+            transform: scale(1.05);
+        }
+        &:hover::before {
+            transform: scale(1.1);
+        }
+
+        &::after {
+            content: url('../img/icons/arrow_card.svg');
+            position: absolute;
+            top: 32px;
+            right: 28px;
+            transition: all .3s;
+        }
+        &::before {
+            transition: transform .7s;
+        }
+
+        &--web {
+            &::before {
+                position: absolute;
+                right: 0;
+                content: url('../img/photo/mac.svg');
+            }
+        }
+        &--bill {
+            &:hover::before {
+                transform: scale(1.1) translateY(-50%);
+            }
+
+            &::before {
+                position: absolute;
+                top: 50%;
+                right: 26px;
+                transform: translateY(-50%);
+                content: url('../img/photo/bill.svg');
+            }
+        }
+        &--crm {
+            &::before {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                content: url('../img/photo/crm.svg');
+            }
+        }
+        &--seo {
+            &::before {
+                position: absolute;
+                right: 0;
+                content: url('../img/photo/seo.svg');
+            }
+        }
+        &--mobile {
+            &::before {
+                display: flex;
+                position: absolute;
+                bottom: 0;
+                margin-bottom: -5px;
+                right: 0;
+                content: url('../img/photo/mobile.svg');
+            }
+        }
+        &--support {
+            &::before {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                content: url('../img/photo/support.svg');
+            }
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        transition: transform .5s;
+
+        &--bottom {
+            margin-top: auto;
+        }
+
+    }
+
+    &__number {
+        font-weight: 400;
+        font-size: 24px;
+        color: #fff;
+    }
+    &__title {
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.84);
+    }
+    &__text {
+        margin-top: 6px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #fff;
+    }
+}

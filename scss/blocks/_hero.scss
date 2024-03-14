@@ -1,0 +1,84 @@
+.hero {
+
+    &__wrapper {
+        padding: 160px 0 200px 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__description {
+        max-width: 640px;
+    }
+    &__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        flex-shrink: 0;
+        width: 260px;
+        height: 260px;
+
+        & p {
+            text-wrap: balance;
+            font-weight: 300;
+            font-size: 20px;
+            text-align: center;
+            color: #000;
+        }
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 100px;
+        text-transform: uppercase;
+        color: #000;
+    }
+    &__subtitle {
+        font-weight: 200;
+        font-size: 47px;
+        color: #0b0b0b;
+        margin-top: 12px;
+    }
+
+    &__wrapper::before {
+        content: url('../img/bg/bg-hero_left.svg');
+        position: absolute;
+        top: -60px;
+        left: -300px;
+        z-index: -1;
+    }
+
+    &__wrapper::after {
+        content: url('../img/bg/bg-hero_right.svg');
+        position: absolute;
+        bottom: -200px;
+        right: -300px;
+        z-index: -1;
+    }
+    
+}
+
+.hero-dignity {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 48px;
+
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+    &__title {
+        font-weight: 800;
+        font-size: 41px;
+        color: #000;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 16px;
+        color: #000;
+    }
+}
