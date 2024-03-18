@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./libs/swiper-bundle.min.css">
 </head>
 <body>
     <header class="header">
@@ -14,43 +15,107 @@
             </a>
             <div class="header__right">
                 <button class="btn btn--main">Обсудить проект</button>
-                <button class="header__burger-menu"><img src="img/icons/menu.svg" alt=""></button>
+                <!-- <div class="header__burger-menu"><img src="img/icons/menu.svg" alt=""></div> -->
+                <button class="btn-menu" id="openMenu">
+                    <span class="btn-menu__line"></span>
+                    <span class="btn-menu__line"></span>
+                    <span class="btn-menu__line"></span>
+                </button>
             </div>
         </div> 
-    </header>
-    <main>
-        <section class="hero">
-            <div class="container hero__wrapper">
-                <div class="hero__description">
-                    <p class="hero__title">DICOM TEAM</p>
-                    <p class="hero__subtitle">ДИДЖИТАЛИЗИРУЙТЕ ВАШУ КОМПАНИЮ</p>
-                    <div class="hero-dignity">
-                        <div class="hero-dignity__item">
-                            <p class="hero-dignity__title">200+</p>
-                            <p class="hero-dignity__subtitle">реализованных проектов</p>
-                        </div>
-                        <div class="hero-dignity__item">
-                            <p class="hero-dignity__title">8</p>
-                            <p class="hero-dignity__subtitle">сфер направлений</p>
-                        </div>
-                        <div class="hero-dignity__item">
-                            <p class="hero-dignity__title">10+</p>
-                            <p class="hero-dignity__subtitle">лет на рынке</p>
+        <div class="menu " id="menu">
+            <div class="menu__inner">
+                <div class="blur-circle"></div>
+                <div class="container">
+                    <div class="menu__wrapper">
+                        <nav>
+                            <ul class="nav">
+                                <li class="nav__item"><a href="!#" class="nav__link">о компании</a></li>
+                                <li class="nav__item"><a href="!#" class="nav__link">кейсы</a></li>
+                                <li class="nav__item"><a href="!#" class="nav__link">услуги</a></li>
+                                <li class="nav__item"><a href="!#" class="nav__link">вакансии</a></li>
+                                <li class="nav__item"><a href="!#" class="nav__link">контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="menu__right">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <p class="menu__title">телефон</p>
+                                    <a href="tel:80943435432" class="menu__link">8 094 343 54 32</a>
+                                </li>
+                                <li class="menu__item">
+                                    <p class="menu__title">почта</p>
+                                    <a href="mailto:v@dicom.team" class="menu__link">v@dicom.team</a>
+                                </li>
+                                <li class="menu__item">
+                                    <p class="menu__title">наш офис</p>
+                                    <p class="menu__text">г. Чебоксары ул. Ярмарочная улица 19к3</p>
+                                </li>
+                                <li class="menu__item">
+                                    <p class="menu__title">мессенджеры</p>
+                                    <ul class="social">
+                                        <li class="social__item"><a href="!#" class="social__link">Телеграм</a></li>
+                                        <li class="social__item"><a href="!#" class="social__link">Вконтакте</a></li>
+                                        <li class="social__item"><a href="!#" class="social__link">Whatsapp</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="menu__links">
+                                <a href="!#" class="menu__link">Политика конфедециальности</a>
+                                <a href="!#" class="menu__link">Пользовательское соглашение</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="hero__text"><p>Сложные IT системы для вашего бизнеса</p></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__description">
+                        <p class="hero__title">DICOM TEAM</p>
+                        <p class="hero__subtitle">ДИДЖИТАЛИЗИРУЙТЕ ВАШУ КОМПАНИЮ</p>
+                        <div class="hero-dignity">
+                            <div class="hero-dignity__item">
+                                <p class="hero-dignity__title">200+</p>
+                                <p class="hero-dignity__subtitle">реализованных проектов</p>
+                            </div>
+                            <div class="hero-dignity__item">
+                                <p class="hero-dignity__title">8</p>
+                                <p class="hero-dignity__subtitle">сфер направлений</p>
+                            </div>
+                            <div class="hero-dignity__item">
+                                <p class="hero-dignity__title">10+</p>
+                                <p class="hero-dignity__subtitle">лет на рынке</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__text"><p>Сложные IT системы для вашего бизнеса</p></div>
+                </div>
             </div>
         </section>
 
-        <div class="ticker">
+        <!-- <div class="ticker">
             <div class="ticker__items marquee">
                 <p class="ticker__text ticker__item">DIGITIZE YOUR COMPANY</p>
             </div>
             <div aria-hidden="true" class="ticker__items marquee">
                 <p class="ticker__text ticker__item">DIGITIZE YOUR COMPANY</p>
             </div>
-          </div>
+        </div> -->
+
+        <div class="swiper swiper-ticker">
+            <div class="swiper-wrapper swiper-ticker__wrapper">
+                <div class="swiper-slide ticker">
+                    <p class="ticker__text ticker__item">DIGITIZE YOUR COMPANY</p>
+                </div>
+                <div class="swiper-slide ticker">
+                    <p class="ticker__text ticker__item">DIGITIZE YOUR COMPANY</p>
+                </div>
+            </div>
+        </div>
 
         <section class="section">
             <div class="container">
@@ -188,9 +253,155 @@
                 </div>
             </div>
         </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title-h2">Почему выбирают нас?</h2>
+                <ul class="benefits">
+                    <li class="benefits__item benefits__item--color_light">
+                        <span class="benefits__number">01</span>
+                        <div class="benefits__description">
+                            <span class="benefits__title">Опыт реализации сложных проектов</span>
+                            <p class="benefits__text">За десять лет работы мы сформировали основные рабочие решения и автоматизировали многие процессы, что бы сделать ваш проект действительно качественным.</p>
+                        </div>
+                    </li>
+                    <li class="benefits__item benefits__item--color_light-blue">
+                        <div class="benefits__description">
+                            <span class="benefits__title">Использование современных технологий</span>
+                            <p class="benefits__text">Мы решаем разносторонние задачи и используем в этом самые современные технологии: motion, flash, htm5, js скрипты, MySQL, net, python, BMC Remedy, rubu, jQuery, обеспечивая быструю и отказоустойчивую работу веб-систем и сервисов.</p>
+                        </div>
+                        <span class="benefits__number">02</span>
+                    </li>
+                    <li class="benefits__item benefits__item--color_main-blue">
+                        <span class="benefits__number">03</span>
+                        <div class="benefits__description">
+                            <span class="benefits__title">Прозрачное<br> ценообразование</span>
+                            <p class="benefits__text">Каждый проект оценивается индивидуально, делается подробная смета по нормо-часам специалистов, участвующих в проекте. Оплата просходит в несколько траншей, 100% проедоплату никогда не требуем, но и совсем бесплатно никогда не работаем.</p>
+                        </div>
+                    </li>
+                    <li class="benefits__item benefits__item--color_dark-blue">
+                        <div class="benefits__description">
+                            <span class="benefits__title">Высокий<br> уровень сервиса</span>
+                            <p class="benefits__text">Мы уделяем внимание мелочам для достижения общего результата, оцениваем необходимые ресурсы на проект и укладываемся в сроки.Прозрачность действий позволяет клиенту видеть выполнение каждой задачи, время и ключевые показатели.</p>
+                        </div>
+                        <span class="benefits__number">04</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="title-h2">Наши клиенты</h2>
+                <div class="partners">
+                    <div class="swiper swiper-partners">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-partners__slide">
+                                <img src="img/slide/p-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-partners__slide">
+                                <img src="img/slide/p-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-partners__slide">
+                                <img src="img/slide/p-3.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-partners__slide">
+                                <img src="img/slide/p-4.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-partners__slide">
+                                <img src="img/slide/p-5.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-partners__slide">
+                                <img src="img/slide/p-6.png" alt="">
+                            </div>
+                            <div class="swiper-slide swiper-partners__slide">
+                                <img src="img/slide/p-7.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="b-info">
+                <img src="img/icons/bg-star.png" class="b-info__img b-info__img--size_large" alt="">
+                <img src="img/icons/bg-star.png" class="b-info__img b-info__img--size_small" alt="">
+                <img src="img/icons/bg-star.png" class="b-info__img b-info__img--left b-info__img--size_medium" alt="">
+                <img src="img/icons/bg-star.png" class="b-info__img b-info__img--right b-info__img--size_medium" alt="">
+                <img src="img/icons/bg-star.png" class="b-info__img b-info__img--size_big" alt="">
+                <div class="b-info__description">
+                    <h2 class="title-h2 b-info__title">Оцифруем ваш бизнес <span>для космического роста</span></h2>
+                    <p class="b-info__text">Мы разрабатываем комплексные IT системы для вашего бизнеса.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="b-info-bottom">
+                    <h2 class="title-h2 b-info-bottom__title">Мы оцифровываем <span>все бизнес-процессы</span>, переводя их <span>в единую</span> информационную систему. </h2>
+                    <div class="b-info-bottom__description">
+                        <img src="img/photo/info.png" class="b-info-bottom__img" alt="">
+                        <div class="b-info-bottom__text">
+                            <p>Это делает управление компанией прозрачным и позволяет собственникам и руководству принимать решения, опираясь на реальные цифровые показатели — а не на домыслы и составленные вручную отчёты.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__wrapper">
+                <div class="footer-grid">
+                    <div class="footer-grid__item">
+                        <a href="mailto:v@dicom.team" class="footer-link">v@dicom.team</a>
+                        <a href="tel:89084536666" class="footer-link">8 908 453 66 66</a>
+                    </div>
+                    <div class="footer-grid__item">
+                        <div class="footer-grid__nav">
+                            <p class="footer-grid__nav-title">наш офис</p>
+                            <p class="footer-grid__nav-text">г. Чебоксары ул. Ярмарочная улица 19к3</p>
+                        </div>
+                        <div class="footer-grid__nav">
+                            <p class="footer-grid__nav-title">мессенджеры</p>
+                            <ul class="social">
+                                <li class="social__item"><a href="!#" class="social__link">Телеграм</a></li>
+                                <li class="social__item"><a href="!#" class="social__link">Вконтакте</a></li>
+                                <li class="social__item"><a href="!#" class="social__link">Whatsapp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="!#" class="btn btn--footer">Обсудить проект</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__wrapper">
+                <div class="footer__row">
+                    <div class="copyright">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.50246 5.50081C8.99222 4.65252 8.06268 4.08464 7.0013 4.08464C5.3913 4.08464 4.08464 5.3913 4.08464 7.0013C4.08464 8.6113 5.3913 9.91797 7.0013 9.91797C8.06268 9.91797 8.99222 9.35009 9.50246 8.50181L8.50216 7.90209C8.19614 8.41099 7.63871 8.7513 7.0013 8.7513C6.03443 8.7513 5.2513 7.96818 5.2513 7.0013C5.2513 6.03443 6.03443 5.2513 7.0013 5.2513C7.63889 5.2513 8.19661 5.59189 8.50251 6.1011L9.50246 5.50081ZM12.8346 7.0013C12.8346 3.78129 10.2213 1.16797 7.0013 1.16797C3.78129 1.16797 1.16797 3.78129 1.16797 7.0013C1.16797 10.2213 3.78129 12.8346 7.0013 12.8346C10.2213 12.8346 12.8346 10.2213 12.8346 7.0013ZM2.33464 7.0013C2.33464 4.42295 4.42295 2.33464 7.0013 2.33464C9.57964 2.33464 11.668 4.42295 11.668 7.0013C11.668 9.57964 9.57964 11.668 7.0013 11.668C4.42295 11.668 2.33464 9.57964 2.33464 7.0013Z" fill="#233144" />
+                            <path d="M9.50246 5.50081C8.99222 4.65252 8.06268 4.08464 7.0013 4.08464C5.3913 4.08464 4.08464 5.3913 4.08464 7.0013C4.08464 8.6113 5.3913 9.91797 7.0013 9.91797C8.06268 9.91797 8.99222 9.35009 9.50246 8.50181L8.50216 7.90209C8.19614 8.41099 7.63871 8.7513 7.0013 8.7513C6.03443 8.7513 5.2513 7.96818 5.2513 7.0013C5.2513 6.03443 6.03443 5.2513 7.0013 5.2513C7.63889 5.2513 8.19661 5.59189 8.50251 6.1011L9.50246 5.50081ZM12.8346 7.0013C12.8346 3.78129 10.2213 1.16797 7.0013 1.16797C3.78129 1.16797 1.16797 3.78129 1.16797 7.0013C1.16797 10.2213 3.78129 12.8346 7.0013 12.8346C10.2213 12.8346 12.8346 10.2213 12.8346 7.0013ZM2.33464 7.0013C2.33464 4.42295 4.42295 2.33464 7.0013 2.33464C9.57964 2.33464 11.668 4.42295 11.668 7.0013C11.668 9.57964 9.57964 11.668 7.0013 11.668C4.42295 11.668 2.33464 9.57964 2.33464 7.0013Z" fill="#1B2839" />
+                            <path d="M9.50246 5.50081C8.99222 4.65252 8.06268 4.08464 7.0013 4.08464C5.3913 4.08464 4.08464 5.3913 4.08464 7.0013C4.08464 8.6113 5.3913 9.91797 7.0013 9.91797C8.06268 9.91797 8.99222 9.35009 9.50246 8.50181L8.50216 7.90209C8.19614 8.41099 7.63871 8.7513 7.0013 8.7513C6.03443 8.7513 5.2513 7.96818 5.2513 7.0013C5.2513 6.03443 6.03443 5.2513 7.0013 5.2513C7.63889 5.2513 8.19661 5.59189 8.50251 6.1011L9.50246 5.50081ZM12.8346 7.0013C12.8346 3.78129 10.2213 1.16797 7.0013 1.16797C3.78129 1.16797 1.16797 3.78129 1.16797 7.0013C1.16797 10.2213 3.78129 12.8346 7.0013 12.8346C10.2213 12.8346 12.8346 10.2213 12.8346 7.0013ZM2.33464 7.0013C2.33464 4.42295 4.42295 2.33464 7.0013 2.33464C9.57964 2.33464 11.668 4.42295 11.668 7.0013C11.668 9.57964 9.57964 11.668 7.0013 11.668C4.42295 11.668 2.33464 9.57964 2.33464 7.0013Z" stroke="#233144" />
+                            <path d="M9.50246 5.50081C8.99222 4.65252 8.06268 4.08464 7.0013 4.08464C5.3913 4.08464 4.08464 5.3913 4.08464 7.0013C4.08464 8.6113 5.3913 9.91797 7.0013 9.91797C8.06268 9.91797 8.99222 9.35009 9.50246 8.50181L8.50216 7.90209C8.19614 8.41099 7.63871 8.7513 7.0013 8.7513C6.03443 8.7513 5.2513 7.96818 5.2513 7.0013C5.2513 6.03443 6.03443 5.2513 7.0013 5.2513C7.63889 5.2513 8.19661 5.59189 8.50251 6.1011L9.50246 5.50081ZM12.8346 7.0013C12.8346 3.78129 10.2213 1.16797 7.0013 1.16797C3.78129 1.16797 1.16797 3.78129 1.16797 7.0013C1.16797 10.2213 3.78129 12.8346 7.0013 12.8346C10.2213 12.8346 12.8346 10.2213 12.8346 7.0013ZM2.33464 7.0013C2.33464 4.42295 4.42295 2.33464 7.0013 2.33464C9.57964 2.33464 11.668 4.42295 11.668 7.0013C11.668 9.57964 9.57964 11.668 7.0013 11.668C4.42295 11.668 2.33464 9.57964 2.33464 7.0013Z" stroke="#1B2839" />
+                          </svg>
+                        <p>2023  DICOM. Все права защищены.</p>
+                    </div>
+                    <ul class="footer__links">
+                        <li><a href="#!" class="footer__link">Политика конфедециальности</a></li>
+                        <li><a href="#!" class="footer__link">Пользовательское соглашение</a></li>
+                        <li><a href="#!" class="footer__link">Вернуться наверх</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

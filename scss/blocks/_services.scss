@@ -1,6 +1,6 @@
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 36px;
 
     &__item {
@@ -40,6 +40,10 @@
         }
         &::before {
             transition: transform .7s;
+
+            @media(max-width: $breakpoint768) {
+                width: 300px !important;
+            }
         }
 
         &--web {
@@ -47,6 +51,14 @@
                 position: absolute;
                 right: 0;
                 content: url('../img/photo/mac.svg');
+                @media(max-width: $breakpoint768) {
+                    content: '';
+                    background-image: url('../img/photo/mac.svg');
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 372px;
+                    height: 418px;
+                }
             }
         }
         &--bill {
@@ -60,6 +72,14 @@
                 right: 26px;
                 transform: translateY(-50%);
                 content: url('../img/photo/bill.svg');
+                @media(max-width: $breakpoint768) {
+                    content: '';
+                    background-image: url('../img/photo/bill.svg');
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 337px;
+                    height: 321px;
+                }
             }
         }
         &--crm {
@@ -68,6 +88,14 @@
                 bottom: 0;
                 right: 0;
                 content: url('../img/photo/crm.svg');
+                @media(max-width: $breakpoint768) {
+                    content: '';
+                    background-image: url('../img/photo/crm.svg');
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 412px;
+                    height: 316px;
+                }
             }
         }
         &--seo {
@@ -75,6 +103,14 @@
                 position: absolute;
                 right: 0;
                 content: url('../img/photo/seo.svg');
+                @media(max-width: $breakpoint768) {
+                    content: '';
+                    background-image: url('../img/photo/seo.svg');
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 379px;
+                    height: 514px;
+                }
             }
         }
         &--mobile {
@@ -85,6 +121,14 @@
                 margin-bottom: -5px;
                 right: 0;
                 content: url('../img/photo/mobile.svg');
+                @media(max-width: $breakpoint768) {
+                    content: '';
+                    background-image: url('../img/photo/mobile.svg');
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 200px !important;
+                    height: 310px;
+                }
             }
         }
         &--support {
@@ -93,7 +137,19 @@
                 bottom: 0;
                 left: 0;
                 content: url('../img/photo/support.svg');
+                @media(max-width: $breakpoint768) {
+                    content: '';
+                    background-image: url('../img/photo/support.svg');
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    width: 418px;
+                    height: 470px;
+                }
             }
+        }
+
+        @media(max-width: $breakpoint768) {
+            min-height: 500px;
         }
     }
 
@@ -126,5 +182,10 @@
         font-size: 16px;
         line-height: 150%;
         color: #fff;
+    }
+
+    @media(max-width: $breakpoint480) {
+        grid-template-columns: unset;
+        gap: 20px;
     }
 }

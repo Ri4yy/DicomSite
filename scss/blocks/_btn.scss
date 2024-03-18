@@ -8,11 +8,24 @@
     color: $main-blue;
     border: 1px solid $main-blue;
     border-radius: 8px;
+    height: fit-content;
 
     &--main {
         padding: 14px 20px;
+
+        &::after {
+            content: url('../img/icons/arrow.svg');
+        }
     }
-    &::after {
-        content: url('../img/icons/arrow.svg');
+    &--footer {
+        padding: 14px 20px;
+        color: #fff;
+        border: 1px solid #fff;
+
+        &::after {
+            content: url('../img/icons/arrow-footer.svg');
+        }
     }
+
+    
 }

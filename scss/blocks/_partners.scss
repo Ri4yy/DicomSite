@@ -1,0 +1,13 @@
+.partners {
+    margin-top: 88px;
+}
+
+.swiper-partners {
+
+    &__slide {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        height: auto !important;
+    }
+}

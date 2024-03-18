@@ -1,6 +1,113 @@
 .footer {
     width: 100%;
-    background-color: red;
     margin-top: auto;
-    height: 100px;
+
+    &__top {
+        margin-top: 160px;
+        background: $main-blue;
+        padding: 94px 0;
+    }
+
+    &__bottom {
+        padding: 30px 0;
+    }
+
+    &__wrapper {
+        max-width: 1328px;
+        margin: 0 auto;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+
+        li {
+            display: inline-flex;
+        }
+    }
+    &__links li:last-child &__link {
+        color: black;
+        font-weight: 500;
+    }
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.57143;
+        color: #1b2839;
+    }
+} 
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 130px;
+    justify-content: space-between;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &-title {
+            font-weight: 600;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #fff;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #fff;
+        }
+    }
+}
+
+.footer-link {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    gap: 24px;
+
+    &__item {
+        display: inline-flex;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #fff;
+    }
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.57143;
+        color: #1b2839;
+    }
 }

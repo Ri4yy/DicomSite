@@ -1,37 +1,6 @@
-// .ticker {
-//     width: 100%;
-//     position: relative;
-
- 
-
-//     &__text {
-//         display: flex;
-//         align-items: center;
-//         gap: 22px;
-//         white-space: nowrap;
-//         font-family: "Inter", sans-serif;
-//         font-weight: 800;
-//         font-size: 128px;
-//         line-height: 1;
-//         letter-spacing: 0.05em;
-//         color: transparent;
-//         -webkit-text-stroke: 1px $main-blue;
-
-//         &::after {
-//             content: url('../img/icons/star.svg');
-//             margin-top: -10px;
-//         }
-//     } 
-// }
-
 .ticker {
-    width: 100%;
-    position: relative;
-    display: flex;
-    overflow: hidden;
-    user-select: none;
-    gap: 20px;
-
+    width: fit-content;
+    
     &__text {
         display: flex;
         align-items: center;
@@ -44,6 +13,7 @@
         letter-spacing: 0.05em;
         color: transparent;
         -webkit-text-stroke: 1px $main-blue;
+        user-select: none;
 
         &::after {
             content: url('../img/icons/star.svg');
@@ -84,3 +54,6 @@ to {
 }
 }
   
+.swiper-ticker__wrapper{
+    transition-timing-function: linear !important;
+}

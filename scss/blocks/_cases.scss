@@ -1,6 +1,6 @@
 .cases {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
     gap: 20px;
 
     &__item {
@@ -41,8 +41,13 @@
     &__title {
         font-weight: 400;
         font-size: 48px;
+        line-height: 1.1;
         text-align: center;
         color: #fff;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 36px;
+        }
     }
     
     &__description {
@@ -61,6 +66,10 @@
         font-size: 24px;
         text-transform: uppercase;
         color: #fff;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 20px;
+        }
     }
     &__text {
         margin-top: 12px;
@@ -68,5 +77,13 @@
         font-size: 16px;
         line-height: 150%;
         color: #fff;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 14px;
+        }
+    }
+
+    @media(max-width: $breakpoint560) {
+        grid-template-columns: unset;
     }
 }

@@ -1,0 +1,120 @@
+.b-info {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 560px;
+    width: 100%;
+    background-color: #E8EAF5;
+
+    &::before {
+        position: absolute;
+        content: url('../img/bg/cloud.svg');
+        left: calc(60 * 100% / 1920);
+        bottom: -5px;
+    }
+    &::after {
+        position: absolute;
+        content: url('../img/bg/racket.svg');
+        right: calc(110 * 100% / 1920);
+        bottom: -5px;
+    }
+
+    &__description {
+        max-width: 720px;
+        z-index: 9;
+    }
+    &__title {
+        text-align: center;
+
+        span {
+            display: block;
+        }
+    }
+    
+    &__text {
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: black;
+    }
+
+    &__img {
+        position: absolute;
+
+        &--size_large {
+            top: 96px;
+            left: calc(390 * 100% / 1920);
+        }
+        &--size_small {
+            width: 32px;
+
+            top: 320px;
+            left: calc(300 * 100% / 1920);
+        }
+        &--size_medium {
+            width: 46px;
+        }
+        &--size_big {
+            width: 64px;
+            top: 200px;
+            right: calc(500 * 100% / 1920);
+        }
+        &--left {
+            top: 257px;
+            left: calc(570 * 100% / 1920);
+        }
+        &--right {
+            top: 80px;
+            right: calc(680 * 100% / 1920);
+        }
+    }
+}
+
+.b-info-bottom {
+
+    &__title {
+        text-align: center;
+        max-width: 1012px;
+        margin: 0 auto;
+    }
+
+    &__description {
+        margin-top: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+    &__img {
+        display: flex;
+        width: 96px;
+        border-radius: 50%;
+        flex-shrink: 0;
+    }
+    &__text {
+        position: relative;
+        padding: 28px 36px;
+        background: #E8EAF5;
+        border-radius: 12px;
+        max-width: 1080px;
+        
+        &::before {
+            content: url('../img/icons/triangle.svg');
+            height: 28px;
+            position: absolute;
+            left: -23px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 1.5;
+            color: #000;
+        }
+    }
+}
