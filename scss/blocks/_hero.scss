@@ -48,7 +48,7 @@
             align-items: start;
         }
         @media(max-width: $breakpoint768) {
-            padding: 40px 0;
+            padding: 100px 0;
         }
     }
     &__description {
@@ -71,8 +71,9 @@
             text-align: center;
             color: #000;
 
-            @media(max-width: $breakpoint480) {
+            @media(max-width: $breakpoint1024) {
                 font-size: 14px;
+                text-align: start;
             }
         }
 
@@ -83,7 +84,8 @@
             height: unset;
         }
         @media(max-width: $breakpoint480) {
-            margin-top: 10px;
+            margin-top: 24px;
+            max-width: 145px;
         }
     }
     &__title {
@@ -115,7 +117,11 @@
             font-size: 32px;
         }
         @media(max-width: $breakpoint480) {
-            font-size: 26px;
+            font-weight: 800;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #000;
+            margin-top: 0;
         }
     }
 
@@ -123,7 +129,7 @@
 }
 
 .hero-dignity {
-    margin-top: 32px;
+    margin-top: 56px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 48px;
@@ -136,6 +142,10 @@
 
         @media(max-width: $breakpoint768) {
             gap: 8px;
+        }
+        @media(max-width: $breakpoint480) {
+            flex-direction: column;
+            align-items: start;
         }
     }
     &__title {
@@ -154,6 +164,10 @@
         font-weight: 300;
         font-size: 16px;
         color: #000;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 12px;
+        }
     }
 
     @media(max-width: $breakpoint768) {
@@ -164,7 +178,8 @@
         gap: 10px;
     }
     @media(max-width: $breakpoint480) {
-        grid-template-columns: 1fr;
-        gap: 4px;
+        grid-template-columns: 90px 80px 40px;
+        gap: 28px;
+        margin-top: 24px;
     }
 }

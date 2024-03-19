@@ -73,4 +73,16 @@ const swiperTicker = new Swiper(".swiper-ticker", {
   slidesPerView:'auto',
   disableOnInteraction: true,
   allowTouchMove:false,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 0.5,
+    },
+    480: {
+      slidesPerView: 0.7,
+    },
+    1280: {
+      slidesPerView: 1,
+    },
+    },
 });

@@ -36,11 +36,11 @@ body {
         color: $text-blue;
     }
 
-    @media(max-width: $breakpoint768) {
+    @media(max-width: $breakpoint1440) {
         font-size: 32px;
     }
     @media(max-width: $breakpoint480) {
-        font-size: 26px;
+        font-size: 24px;
     }
 }
 .section {

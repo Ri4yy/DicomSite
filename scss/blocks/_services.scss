@@ -184,8 +184,10 @@
         color: #fff;
     }
 
+    @media(max-width: $breakpoint768) {
+        gap: 20px;
+    }
     @media(max-width: $breakpoint480) {
         grid-template-columns: unset;
-        gap: 20px;
     }
 }
