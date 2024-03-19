@@ -471,27 +471,29 @@ body {
   transition: all 0.3s;
   z-index: 7;
 }
-.btn:hover {
-  color: #fff;
-}
-.btn:hover svg {
-  stroke: #fff;
-  transform: translate(2px, -2px);
-}
-.btn:hover .btn__hover {
-  width: 500px;
-  height: 500px;
-}
-.btn .btn__hover {
-  position: absolute;
-  z-index: 6;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: #4C7AC2;
-  transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s, background-color 0.4s;
-  pointer-events: none;
+@media (hover: hover) {
+  .btn:hover {
+    color: #fff;
+  }
+  .btn:hover svg {
+    stroke: #fff;
+    transform: translate(2px, -2px);
+  }
+  .btn:hover .btn__hover {
+    width: 500px;
+    height: 500px;
+  }
+  .btn .btn__hover {
+    position: absolute;
+    z-index: 6;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #4C7AC2;
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s, background-color 0.4s;
+    pointer-events: none;
+  }
 }
 .btn--main {
   padding: 14px 20px;
@@ -1870,12 +1872,12 @@ body {
   .menu__inner {
     overflow: clip;
     overflow-y: scroll;
-    height: 100vh;
+    height: 100dvh;
   }
 }
 @media (max-width: 480px) {
   .menu__inner {
-    padding: 60px 0 0;
+    padding: 60px 0 100px;
   }
 }
 .menu__wrapper {
@@ -2158,7 +2160,7 @@ body {
   .modal .container {
     overflow: clip;
     overflow-y: scroll;
-    height: 100vh;
+    height: 100dvh;
     padding-bottom: 100px !important;
   }
 }

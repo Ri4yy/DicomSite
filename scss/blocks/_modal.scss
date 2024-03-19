@@ -70,7 +70,7 @@
         @media(max-width: $breakpoint768) {
             overflow: clip;
             overflow-y: scroll;
-            height: 100vh;
+            height: 100dvh;
             padding-bottom: 100px !important;
         }
     }

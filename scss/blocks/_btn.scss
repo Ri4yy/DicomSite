@@ -24,31 +24,34 @@
         z-index: 7;
     }
 
-    &:hover {
-        color: #fff;
-    }
-    &:hover svg {
-        stroke: #fff;
-        transform: translate(2px, -2px);
+    @media(hover: hover) {
+        &:hover {
+            color: #fff;
+        }
+        &:hover svg {
+            stroke: #fff;
+            transform: translate(2px, -2px);
+        }
+        
+        &:hover &__hover {
+            width: 500px;
+            height: 500px;	
+        }
+    
+        & &__hover {
+            position: absolute;
+            z-index: 6;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: $main-blue;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            transition: width .6s, height .6s, background-color .4s;
+            pointer-events: none;
+        }
     }
 
-    &:hover &__hover {
-        width: 500px;
-        height: 500px;	
-    }
-
-    & &__hover {
-        position: absolute;
-        z-index: 6;
-        width: 0;
-        height: 0;
-        border-radius: 50%;
-        background: $main-blue;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        transition: width .6s, height .6s, background-color .4s;
-        pointer-events: none;
-    }
 
     &--main {
         padding: 14px 20px;

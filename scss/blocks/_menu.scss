@@ -100,16 +100,22 @@
         //     }
         // }
 
+        
+
         @media(max-width: $breakpoint1024) {
             padding: 60px 0 130px;
         }
         @media(max-width: $breakpoint768) {
             overflow: clip;
             overflow-y: scroll;
-            height: 100vh;
+            height: 100dvh;
         }
         @media(max-width: $breakpoint480) {
-            padding: 60px 0 0;
+            padding: 60px 0 100px;
+
+            // & .container {
+            //     padding-bottom: 150px !important;
+            // }
         }
     }
 
