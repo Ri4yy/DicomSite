@@ -48,6 +48,7 @@
 
     &__area {
         transition: all .3s;
+
         &:focus {
             border: 1px solid $text-blue;
             box-shadow: 0 0 6px 0 $text-blue;
@@ -58,6 +59,7 @@
             font-size: 16px;
             color: #000;
         }
+
     }
 
     &__bottom {
@@ -112,7 +114,6 @@
         top: 0;
         left: 0;
         z-index: 1;
-        // visibility: hidden;
         position: absolute;
     }
     &__inner {
@@ -148,6 +149,11 @@
     border: 1px solid black;
     width: 100%;
 
+    &:hover {
+        border: 1px solid $text-blue;
+        box-shadow: 0 0 6px 0 $text-blue;
+    }
+
     &:focus {
         border: 1px solid $text-blue;
         box-shadow: 0 0 6px 0 $text-blue;
@@ -157,6 +163,10 @@
         font-weight: 400;
         font-size: 16px;
         color: #000;
+    }
+
+    @media(max-width: $breakpoint480) {
+        padding: 12px 14px;
     }
 }
 
@@ -175,6 +185,9 @@
         grid-row: 6/7;
         grid-column: unset;
     }
+    @media(max-width: $breakpoint480) {
+        padding: 12px 14px;
+    }
 }
 
 .select {
@@ -191,5 +204,8 @@
 
     @media(max-width: $breakpoint600) {
         grid-row: 5/6;
+    }
+    @media(max-width: $breakpoint480) {
+        padding: 12px 14px;
     }
 }

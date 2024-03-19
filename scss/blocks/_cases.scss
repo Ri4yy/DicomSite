@@ -37,6 +37,10 @@
             bottom: 0;
         }
 
+        &:hover .cases__title {
+            opacity: 0;
+        }
+
         @media(max-width: $breakpoint1440) {
             height: 300px;
         }
@@ -51,6 +55,7 @@
         line-height: 1.1;
         text-align: center;
         color: #fff;
+        transition: all .3s;
 
         @media(max-width: $breakpoint480) {
             font-size: 36px;

@@ -161,8 +161,25 @@
         &--bottom {
             margin-top: auto;
         }
-
     }
+
+    // &__img {
+    //     width: 430px;
+    //     height: 800px;
+    //     background: radial-gradient(57.55% 57.55% at 52.67% 43.52%, rgb(0, 63, 225) 45.76599299907684%, rgb(0, 63, 225) 93.22916865348816%), radial-gradient(95.34% 73.66% at 51.59% 87.46%, rgb(0, 63, 225) 0%, rgb(0, 63, 225) 100%), radial-gradient(59.03% 58.05% at 98.14% 32.65%, rgb(173, 84, 243) 0%, rgb(173, 84, 243) 97.05789089202881%), radial-gradient(81.35% 88.17% at 21.76% 39.05%, rgb(56, 52, 255) 0%, rgb(56, 52, 255) 100%), radial-gradient(29% 73.17% at 74.14% 7.49%, rgb(173, 84, 243) 0%, rgb(173, 84, 243) 100%), radial-gradient(67.02% 81.31% at 82.24% 15.28%, rgb(243, 84, 208) 0%, rgb(243, 84, 208) 100%), radial-gradient(73.62% 82.39% at 24.77% 7.94%, rgb(0, 163, 255) 0%, rgb(0, 163, 255) 100%), radial-gradient(104.79% 103.06% at 34.81% 28.79%, rgb(243, 84, 208) 41.057464480400085%, rgb(243, 84, 208) 100%);
+    //     filter: blur(150px);
+    //     border-radius: 50%;
+    //     position: absolute;
+    // }
+    
+    // &__img:nth-of-type(1) {
+    //     top: -150px;
+    //     left: -315px;
+    // }
+    // &__img:nth-of-type(2) {
+    //     bottom: -250px;
+    //     right: -315px;
+    // }
 
     &__number {
         font-weight: 400;

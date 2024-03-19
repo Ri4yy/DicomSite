@@ -14,6 +14,31 @@ document.addEventListener("DOMContentLoaded", () => {
             $('html').toggleClass('no-scroll');
     }); 
 
+    $('.btn--project, .modal__close').click((e) => {
+        $('#modal-form').toggleClass('modal--open');
+
+        $(document).keydown(function(e) {
+            if (e.keyCode === 27) {
+                e.stopPropagation();
+                $('#modal-form').removeClass('modal--open');
+                $('html').removeClass('no-scroll');
+            }
+        });
+
+        $('html').toggleClass('no-scroll');
+    })
+
+    $(".btn").mouseover(function(e){
+        var pos = $(this).offset();
+        var elem_left = pos.left;
+        var elem_top = pos.top;
+        var Xinner = e.pageX - elem_left;
+        var Yinner = e.pageY - elem_top;
+            $(this).find(".btn__hover").css({
+                "left":Xinner,
+                "top":Yinner
+            })
+    });
 
   // Фиксированная шапка при скролле
   // $(window).on('load resize', () => {

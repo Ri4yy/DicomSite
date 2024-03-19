@@ -14,7 +14,15 @@
                 <img src="img/icons/logo.svg" alt="">
             </a>
             <div class="header__right">
-                <button class="btn btn--main">Обсудить проект</button>
+                <button class="btn btn--main btn--project">
+                    <span class="btn__text">Обсудить проект</span>
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.08594 0.800781H12.5859" stroke-width="1.2" />
+                        <path d="M13 12L13 -4.76837e-07" stroke-width="1.2" />
+                        <path d="M1 12L12.9145 0.800001" stroke-width="1.2" />
+                    </svg>
+                    <span class="btn__hover"></span>
+                </button>
                 <!-- <div class="header__burger-menu"><img src="img/icons/menu.svg" alt=""></div> -->
                 <button class="btn-menu" id="openMenu">
                     <span class="btn-menu__line"></span>
@@ -23,7 +31,7 @@
                 </button>
             </div>
         </div> 
-        <div class="menu " id="menu">
+        <div class="menu" id="menu">
             <div class="menu__inner">
                 <div class="blur-circle"></div>
                 <div class="container">
@@ -61,7 +69,7 @@
                                 </li>
                             </ul>
                             <div class="menu__links">
-                                <a href="!#" class="menu__link">Политика конфедециальности</a>
+                                <a href="!#" class="menu__link">Политика конфиденциальности</a>
                                 <a href="!#" class="menu__link">Пользовательское соглашение</a>
                             </div>
                             <button class="btn btn--main">Обсудить проект</button>
@@ -98,23 +106,12 @@
             </div>
         </section>
 
-        <!-- <div class="ticker">
-            <div class="ticker__items marquee">
-                <p class="ticker__text ticker__item">DIGITIZE YOUR COMPANY</p>
-            </div>
-            <div aria-hidden="true" class="ticker__items marquee">
-                <p class="ticker__text ticker__item">DIGITIZE YOUR COMPANY</p>
-            </div>
-        </div> -->
-
         <div class="swiper swiper-ticker">
             <div class="swiper-wrapper swiper-ticker__wrapper">
                 <div class="swiper-slide ticker">
-                    <!-- <p class="ticker__text ticker__item">DIGITIZE YOUR COMPANY</p> -->
                     <img src="img/photo/run.svg" alt="">
                 </div>
                 <div class="swiper-slide ticker">
-                    <!-- <p class="ticker__text ticker__item">DIGITIZE YOUR COMPANY</p> -->
                     <img src="img/photo/run.svg" alt="">
                 </div>
             </div>
@@ -171,6 +168,8 @@
         </section>
 
         <section class="section">
+            <!-- <div class="services__img"></div>
+            <div class="services__img"></div> -->
             <div class="container">
                 <h2 class="title-h2">Наши услуги</h2>
                 <div class="services container__inner">
@@ -251,7 +250,15 @@
                             </div>
                             <input type="text" name="name" class="input form__area" placeholder="Почта*" required>
                         </div>
-                        <button type="submit" class="btn btn--main form__btn">ОТПРАВИТЬ</button>
+                        <button type="submit" class="btn btn--main form__btn">
+                            <span class="btn__text">ОТПРАВИТЬ</span>
+                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.08594 0.800781H12.5859" stroke-width="1.2" />
+                                <path d="M13 12L13 -4.76837e-07" stroke-width="1.2" />
+                                <path d="M1 12L12.9145 0.800001" stroke-width="1.2" />
+                            </svg>
+                            <span class="btn__hover"></span>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -356,6 +363,66 @@
         </section>
     </main>
 
+    <div class="modal" id="modal-form">
+        <div class="modal__body">
+            <button class="modal__close"><img src="img/icons/close.svg" alt=""></button>
+            <div class="container">
+                <div class="b-form">
+                    <div class="b-form__head">
+                        <h2 class="title-h2">Укажите данные для <span>обсуждения проекта</span></h2>
+                        <p class="b-form__subtitle">Мы свяжемся с вами в кратчайшие сроки.</p>
+                    </div>
+                    <form action="form">
+                        <div class="form__wrapper">
+                            <input type="text" name="name" class="input form__area" placeholder="Ваше имя*" required>
+                            <select class="select form__area" name="">
+                                <option>Бюджет</option>
+                                <option>Бюджет</option>
+                                <option>Бюджет</option>
+                            </select>
+                            <input type="text" name="name" class="input form__area" placeholder="Название компании*" required>
+                            <textarea class="textarea form__area" name="message" placeholder="Расскажите о проекте"></textarea>
+                            <div class="">
+                                <input type="text" name="name" class="input form__area" placeholder="Телефон*" required>
+                            </div>
+                            <div class="form__bottom">
+                                <p class="form__text">Что хотите реализовать? В какие сроки? Ещё что-то.</p>
+                                <div class="file">
+                                    <input type="file" class="file__input">
+                                    <label class="file__inner">
+                                        <span>Выберите файл</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="text" name="name" class="input form__area" placeholder="Почта*" required>
+                        </div>
+                        <button type="submit" class="btn btn--main form__btn">
+                            <span class="btn__text">ОТПРАВИТЬ</span>
+                            <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.08594 0.800781H12.5859" stroke-width="1.2" />
+                                <path d="M13 12L13 -4.76837e-07" stroke-width="1.2" />
+                                <path d="M1 12L12.9145 0.800001" stroke-width="1.2" />
+                            </svg>
+                            <span class="btn__hover"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="modal__ticker">
+                <div class="swiper swiper-ticker">
+                    <div class="swiper-wrapper swiper-ticker__wrapper">
+                        <div class="swiper-slide ticker">
+                            <img src="img/photo/run.svg" alt="">
+                        </div>
+                        <div class="swiper-slide ticker">
+                            <img src="img/photo/run.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="footer__top">
             <div class="footer__wrapper">
@@ -382,7 +449,7 @@
                         <a href="mailto:v@dicom.team" class="social__link">Политика конфедециальности</a>
                         <a href="tel:89084536666" class="social__link">Пользовательское соглашение</a>
                     </div>
-                    <a href="!#" class="btn btn--footer">Обсудить проект</a>
+                    <button class="btn btn--footer btn--project">Обсудить проект</button>
                     <div class="copyright">
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.50246 5.50081C8.99222 4.65252 8.06268 4.08464 7.0013 4.08464C5.3913 4.08464 4.08464 5.3913 4.08464 7.0013C4.08464 8.6113 5.3913 9.91797 7.0013 9.91797C8.06268 9.91797 8.99222 9.35009 9.50246 8.50181L8.50216 7.90209C8.19614 8.41099 7.63871 8.7513 7.0013 8.7513C6.03443 8.7513 5.2513 7.96818 5.2513 7.0013C5.2513 6.03443 6.03443 5.2513 7.0013 5.2513C7.63889 5.2513 8.19661 5.59189 8.50251 6.1011L9.50246 5.50081ZM12.8346 7.0013C12.8346 3.78129 10.2213 1.16797 7.0013 1.16797C3.78129 1.16797 1.16797 3.78129 1.16797 7.0013C1.16797 10.2213 3.78129 12.8346 7.0013 12.8346C10.2213 12.8346 12.8346 10.2213 12.8346 7.0013ZM2.33464 7.0013C2.33464 4.42295 4.42295 2.33464 7.0013 2.33464C9.57964 2.33464 11.668 4.42295 11.668 7.0013C11.668 9.57964 9.57964 11.668 7.0013 11.668C4.42295 11.668 2.33464 9.57964 2.33464 7.0013Z" fill="#fff" />
