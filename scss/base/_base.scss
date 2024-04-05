@@ -19,7 +19,12 @@ body {
             margin-top: 24px;
         }
     }
-
+    // @media (max-width: $breakpoint1440) {
+    //     max-width: 980px;
+    // }
+    // @media (max-width: $breakpoint1024) {
+    //     max-width: 728px;
+    // }
     @media (max-width: 1360px) {
         padding: 0 16px !important;
     }

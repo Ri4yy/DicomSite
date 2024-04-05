@@ -65,9 +65,9 @@ const swiperPartners = new Swiper('.swiper-partners', {
 const swiperTicker = new Swiper(".swiper-ticker", {
   slidesPerView: 'auto',
   spaceBetween: 30,
-  speed: 5000,
+  speed: 8000,
   autoplay: {
-    delay: 0.01,
+    delay: 2,
   },
   loop: true,
   slidesPerView:'auto',
@@ -83,6 +83,9 @@ const swiperTicker = new Swiper(".swiper-ticker", {
     },
     1280: {
       slidesPerView: 1,
+    },
+    1921: {
+      slidesPerView: 2,
     },
     },
 });

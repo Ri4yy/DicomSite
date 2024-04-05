@@ -1,5 +1,13 @@
 .ticker {
     width: fit-content;
+    &:nth-of-type(3) {
+        display: flex;
+    }
+    @media(max-width: 1920px) {
+        &:nth-of-type(3) {
+            display: none;
+        }
+    }
     
     &__text {
         display: flex;
