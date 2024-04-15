@@ -1,0 +1,206 @@
+.crm-prices {
+
+    &__slide {
+        display: flex !important;
+        height: auto !important;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 40px 32px;
+        border-radius: 24px;
+        border: 2px solid #EDF0F1;
+        height: auto;
+        width: 100%;
+        transition: background .3s;
+
+        &:hover {
+            background: #EDF0F1;
+
+            & .crm-prices__button {
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0;
+        width: 100%;
+        word-wrap: break-word;
+    }
+
+    &__small {
+        font-size: 32px;
+        margin-bottom: 24px;
+        font-weight: 700;
+        line-height: initial;
+        color: black;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    &__subtitle {
+        line-height: 1;
+        margin-bottom: 16px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #878787;
+    }
+
+    &__button {
+        height: 51px;
+        font-size: 19px;
+        margin-bottom: 12px;
+        background-color: #000;
+        color: #fff;
+        border-radius: 55px;
+        padding: 0 40px;
+        transition: transform .3s;
+    }
+
+    &__storage {
+        width: 100%;
+        text-align: center;
+        color: #545963;
+        font-size: 19px;
+        font-weight: 400;
+    }
+
+    & .swiper-button-next {
+        width: 230px !important;
+        height: 58px !important;
+        display: flex !important;
+        gap: 12px !important;
+        padding: 8px 20px !important;
+        border-radius: 16px 16px 0px 0px !important;
+        background: #EDF0F1 !important;
+        transform: rotate(90deg) !important;
+        right: -85px !important;
+        top: 190px !important;
+
+        &::after {
+            content: '';
+        }
+       
+        & img {
+            width: 32px;
+            height: 47px;
+            display: block;
+            transform: rotate(-90deg);
+            grid-column: 1;
+            grid-row: 1/3;
+            margin: 0;
+            transition: margin 0.2s ease;
+        }
+    }
+
+    & .swiper-button-prev {
+        width: 230px !important;
+        height: 58px !important;
+        display: flex !important;
+        gap: 12px !important;
+        padding: 8px 20px !important;
+        border-radius: 0px 0px 16px 16px !important;
+        background: #EDF0F1 !important;
+        transform: rotate(90deg) !important;
+        left: -85px !important;
+        top: 190px !important;
+
+        &::after {
+            content: '';
+        }
+
+        & img {
+            width: 32px;
+            height: 47px;
+            display: block;
+            transform: rotate(90deg);
+            grid-column: 1;
+            grid-row: 1/3;
+            margin: 0;
+            transition: margin 0.2s ease;
+        }
+    }
+}
+
+.swiper-button-disabled {
+    opacity: 0 !important;
+}
+
+.crm-prices-users {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    &__count {
+        color: #000;
+        font-size: 72px;
+        font-family: Arial; 
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    &__body {
+        font-size: 19px;
+        line-height: 180%;
+        color: #545963;
+        font-weight: 400;
+    }
+}
+
+.crm-prices-price {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+
+    &:not(:has(.body)) {
+        padding-bottom: 22px;
+    }
+}
+
+.crm-prices-price-count {
+    color: #000;
+    font-size: 72px;
+    line-height: 120%;
+}
+
+.swiper {
+
+    &__container {
+        position: relative !important;
+        width: calc(100% - 116px);
+        width: 100% !important;
+        padding: 0 58px !important;
+    }
+
+    &-button {
+
+        &__wrapper {
+
+            & .caption {
+                color: #878787;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1;
+            }
+            h4 {
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 1;
+                color: black;
+            }
+        }
+    }
+}
+
+.crm-prices-container {
+    padding-left: calc((100% - 1444px) / 2);
+    padding-right: calc((100% - 1444px) / 2);
+}
