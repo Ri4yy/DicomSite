@@ -89,3 +89,58 @@ const swiperTicker = new Swiper(".swiper-ticker", {
     },
     },
 });
+
+const swiperLicense = new Swiper('.swiper-license', {
+
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 24,
+  // cssMode: true,
+  navigation: {
+      enabled: false,
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+  },
+  breakpoints: {
+  320: {
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    navigation: {
+        enabled: true
+    }
+  },
+  550: {
+    slidesPerView: 1.3,
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    navigation: {
+        enabled: true
+    }
+  },
+  700: {
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    spaceBetween: 20,
+    navigation: {
+        enabled: true
+    }
+  },
+  1080: {
+      slidesPerView: 2.5,
+      slidesPerGroup: 3,
+      spaceBetween: 20,
+      navigation: {
+          enabled: true
+      }
+  },
+  1240: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 24,
+      navigation: {
+          enabled: true
+      }
+  }
+  },
+  });

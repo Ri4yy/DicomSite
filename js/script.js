@@ -40,6 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
             })
     });
 
+    $('.b-service__top').click((e) => {
+        $(e.target).closest('.b-service__item').toggleClass('b-service__item--active')
+        // $(e.target).closest('.b-service__item').find('.b-service__wrapper').toggleClass('open')
+    })
+
   // Фиксированная шапка при скролле
   // $(window).on('load resize', () => {
   //     let windows = $(window);

@@ -15,6 +15,10 @@
         width: 100%;
         transition: background .3s;
 
+        @media(max-width: $breakpoint480) {
+            padding: 28px 20px;
+        }
+
         &:hover {
             background: #EDF0F1;
 
@@ -39,10 +43,19 @@
         line-height: initial;
         color: black;
         margin-bottom: 16px;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
     }
 
     &__title {
         margin-bottom: 60px;
+
+        @media(max-width: $breakpoint768) {
+            margin-bottom: 24px;
+        }
     }
 
     &__subtitle {
@@ -57,11 +70,16 @@
         height: 51px;
         font-size: 19px;
         margin-bottom: 12px;
-        background-color: #000;
+        background-color: $main-blue;
         color: #fff;
         border-radius: 55px;
         padding: 0 40px;
         transition: transform .3s;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 14px;
+            height: 40px;
+        }
     }
 
     &__storage {
@@ -70,6 +88,10 @@
         color: #545963;
         font-size: 19px;
         font-weight: 400;
+
+        @media(max-width: $breakpoint480) {
+            font-size: 16px;
+        }
     }
 
     & .swiper-button-next {
@@ -83,6 +105,10 @@
         transform: rotate(90deg) !important;
         right: -85px !important;
         top: 190px !important;
+
+        @media(max-width: 1239px) {
+            display: none !important;
+        }
 
         &::after {
             content: '';
@@ -112,6 +138,10 @@
         left: -85px !important;
         top: 190px !important;
 
+        @media(max-width: 1239px) {
+            display: none !important;
+        }
+
         &::after {
             content: '';
         }
@@ -139,6 +169,11 @@
     flex-direction: column;
     margin-bottom: 32px;
 
+    @media(max-width: $breakpoint480) {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
     &__count {
         color: #000;
         font-size: 72px;
@@ -160,6 +195,10 @@
     flex-direction: column;
     margin-bottom: 32px;
 
+    @media(max-width: $breakpoint480) {
+        margin-bottom: 20px;
+    }
+
     &:not(:has(.body)) {
         padding-bottom: 22px;
     }
@@ -169,6 +208,10 @@
     color: #000;
     font-size: 72px;
     line-height: 120%;
+
+    @media(max-width: $breakpoint480) {
+        font-size: 48px;
+    }
 }
 
 .swiper {
@@ -178,6 +221,10 @@
         width: calc(100% - 116px);
         width: 100% !important;
         padding: 0 58px !important;
+
+        @media(max-width: 1239px) {
+            padding: 0 16px !important;
+        }
     }
 
     &-button {
