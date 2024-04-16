@@ -2524,6 +2524,8 @@ body {
 }
 
 .crm-prices__slide {
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;

@@ -90,57 +90,82 @@ const swiperTicker = new Swiper(".swiper-ticker", {
     },
 });
 
-const swiperLicense = new Swiper('.swiper-license', {
+document.addEventListener('DOMContentLoaded', function () {
 
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 24,
-  // cssMode: true,
-  navigation: {
-      enabled: false,
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-  },
-  breakpoints: {
-  320: {
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    spaceBetween: 20,
+  const swiperLicense = new Swiper('.swiper-license', {
+  
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    spaceBetween: 24,
+    // cssMode: true,
     navigation: {
-        enabled: true
-    }
-  },
-  550: {
-    slidesPerView: 1.3,
-    slidesPerGroup: 1,
-    spaceBetween: 20,
-    navigation: {
-        enabled: true
-    }
-  },
-  700: {
-    slidesPerView: 2,
-    slidesPerGroup: 2,
-    spaceBetween: 20,
-    navigation: {
-        enabled: true
-    }
-  },
-  1080: {
-      slidesPerView: 2.5,
-      slidesPerGroup: 3,
+        enabled: false,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
       spaceBetween: 20,
       navigation: {
           enabled: true
       }
-  },
-  1240: {
-      slidesPerView: 3,
-      slidesPerGroup: 3,
-      spaceBetween: 24,
+    },
+    550: {
+      slidesPerView: 1.3,
+      slidesPerGroup: 1,
+      spaceBetween: 20,
       navigation: {
           enabled: true
       }
-  }
-  },
+    },
+    700: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+      navigation: {
+          enabled: true
+      }
+    },
+    1080: {
+        slidesPerView: 2.5,
+        slidesPerGroup: 3,
+        spaceBetween: 20,
+        navigation: {
+            enabled: true
+        }
+    },
+    1240: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+        spaceBetween: 24,
+        navigation: {
+            enabled: true
+        }
+    }
+    },
+    on: {
+      slideChange: function () {
+        const activeIndex = this.activeIndex;
+        const slides = this.slides;
+
+        // Добавляем задержку перед изменением opacity
+        setTimeout(() => {
+          slides.forEach((slide, index) => {
+            if (index >= activeIndex && index < activeIndex + 3) {
+              slide.style.opacity = 1;
+            } else {
+              slide.style.opacity = 0;
+            }
+          });
+        }, 50); // Используем 50 мс задержку, но можно изменить значение по вашему усмотрению
+      }
+    }
   });
+
+  const slides = swiperLicense.slides;
+  for (let i = 0; i < 3; i++) {
+    slides[i].style.opacity = 1;
+  }
+})

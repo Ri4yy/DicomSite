@@ -1,6 +1,7 @@
 .crm-prices {
 
     &__slide {
+        transition: opacity 0.1s ease;
         display: flex !important;
         height: auto !important;
     }
